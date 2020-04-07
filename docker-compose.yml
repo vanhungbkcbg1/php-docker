@@ -16,6 +16,8 @@ services:
     container_name: php
     image: php:7.3-fpm-alpine
     working_dir: /code
+    environment:
+      api_url: test
     volumes:
       - ./code:/code
     networks:
